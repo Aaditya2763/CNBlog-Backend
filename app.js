@@ -24,11 +24,11 @@ res.status(200).json({msg:'hello from server'});
 
 
 app.use(cors({
-    origin:[
-        `https://aditya-react-blog-website.vercel.app/`
-`http://localhost:3000/`
-      `*`
-    ],
+//     origin:[
+// //         `https://aditya-react-blog-website.vercel.app/`
+// // `http://localhost:3000/`
+// //       `*`
+//     ],
     
 }));
 
