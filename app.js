@@ -23,7 +23,7 @@ res.status(200).json({msg:'hello from server'});
 })
 
 app.use(cors({
-    origin:[`${process.env.CLIENT_URL}`,
+    origin:["https://aditya-react-blog-website.vercel.app",
     `${process.env.DEVELOPMENT}`,]
 }));
 app.use(express.urlencoded({extended:false}));
