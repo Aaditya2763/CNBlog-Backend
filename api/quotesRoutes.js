@@ -20,7 +20,7 @@ catch(e){
 
 
  router.post("/quotes/new", async(req,res)=>{
-    confirm.log("ndsbnbdfmnn")
+    // confirm.log("ndsbnbdfmnn")
      try{
          const {author ,blogDescription,blogTitle,imageUrl1,imageUrl2}=req.body;
          const newQuote=await Quote.create({author,blogDescription,blogTitle,imageUrl1,imageUrl2});

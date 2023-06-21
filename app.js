@@ -32,7 +32,7 @@ app.use(cors({
 
 app.use((req, res, next) => {
     const allowedOrigins = [
-        `${CLIENT_URL}`,
+        `https://aditya-react-blog-website.vercel.app/`,
         `${DEVELOPMENT_URL}`,
     ];
     const origin = req.headers.origin;
