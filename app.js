@@ -24,10 +24,11 @@ res.status(200).json({msg:'hello from server'});
 
 app.use(cors({
     origin:[
-        `https://aditya-react-blog-website.vercel.app/`,
+        "https://aditya-react-blog-website.vercel.app/",
 
         `${DEVELOPMENT_URL}`,
-    ]
+    ],
+    credentials: true,
 }));
 
 
