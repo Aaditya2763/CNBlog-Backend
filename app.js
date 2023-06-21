@@ -21,18 +21,12 @@ const db_Url=process.env.DB_URL;
 app.get('/hello',(req,res)=>{
 res.status(200).json({msg:'hello from server'});
 })
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*'); // Allow requests from any origin
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Allow the specified HTTP methods
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept'); // Allow the specified headers
-    next();
-  });
-  
+
 
 app.use(cors({
     origin:[
-        `https://aditya-react-blog-website.vercel.app`
-`http://localhost:3000`
+        `https://aditya-react-blog-website.vercel.app/`
+`http://localhost:3000/`
       `*`
     ],
     
