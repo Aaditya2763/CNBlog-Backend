@@ -24,32 +24,14 @@ res.status(200).json({msg:'hello from server'});
 
 app.use(cors({
     origin:[
-        `${CLIENT_URL}`,
+        `https://aditya-react-blog-website.vercel.app/`,
+
         `${DEVELOPMENT_URL}`,
     ]
 }));
 
 
-app.use((req, res, next) => {
-    const allowedOrigins = [
-        `https://aditya-react-blog-website.vercel.app/`,
-        `${DEVELOPMENT_URL}`,
-    ];
-    const origin = req.headers.origin;
-    if (allowedOrigins.includes(origin)) {
-      res.setHeader("Access-Control-Allow-Origin", origin);
-    }
-    // res.header("Access-Control-Allow-Origin", `${process.env.CLIENT_URL}`);
-    // res.header("Access-Control-Allow-Origin", `${process.env.HOME_URL}`)
-    // res.header("Access-Control-Allow-Origin", `${process.env.HOME_URL2}`)
-    res.header("Access-Control-Allow-Credentials", true);
-    res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-    );
-    next();
-  });
+
 app.use(express.urlencoded({extended:false}));
 //it will work as pody-parser or urlencoder
 app.use(express.json())
