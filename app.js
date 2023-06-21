@@ -23,8 +23,8 @@ res.status(200).json({msg:'hello from server'});
 })
 
 app.use(cors({
-    origin:[`${process.env.CLIENT_URL}`,
-    `${process.env.DEVELOPMENT}`,]
+    origin:["https://aditya-react-blog-website.vercel.app",
+    `http://localhost:3000`]
 }));
 app.use(express.urlencoded({extended:false}));
 //it will work as pody-parser or urlencoder
