@@ -28,8 +28,8 @@ app.use(
     //   `${process.env.DEVELOPMENT}`,
     //   `${process.env.CLIENT_URL}`,
     //   `${process.env.ADMIN_URL}`,
-      `http://localhost:3000/`
-      `https://aditya-react-blog-website.vercel.app/`
+      `http://localhost:3000`
+      `https://aditya-react-blog-website.vercel.app`
     ],
     methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
   })
