@@ -25,11 +25,11 @@ app.use(methodOverride('_method'))
 app.use(
   cors({
     origin: [
-    //   `${process.env.DEVELOPMENT}`,
-    //   `${process.env.CLIENT_URL}`,
-    //   `${process.env.ADMIN_URL}`,
-      `http://localhost:3000`
-      `https://aditya-react-blog-website.vercel.app`
+      `${process.env.DEVELOPMENT}`,
+      `${process.env.CLIENT_URL}`,
+    
+      "http://localhost:3000",
+      "https://aditya-react-blog-website.vercel.app"
     ],
     methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
   })
