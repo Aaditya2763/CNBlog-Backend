@@ -26,7 +26,7 @@ app.use(
   cors({
     origin: [
       
-    
+    `https://aditya-react-blog-website.vercel.app/`
       `http://localhost:3000`,
       
     ],
