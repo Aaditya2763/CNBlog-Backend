@@ -26,7 +26,7 @@ app.use(
     origin: [
       
     `https://aditya-react-blog-website.vercel.app`
-      `http://localhost:3000`,
+      // `http://localhost:3000`,
       
     ],
     
