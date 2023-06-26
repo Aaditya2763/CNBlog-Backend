@@ -14,8 +14,7 @@ const db_Url=process.env.DB_URL;
  .catch((e)=>console.log(e));
  
 
-//seeding data from dummy_Quotes
-// seedDb()
+
 
 app.use(express.urlencoded({extended:false}));
 //it will work as pody-parser or urlencoder
