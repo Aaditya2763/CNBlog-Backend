@@ -25,28 +25,23 @@ app.use(
   cors({
     origin: [
       
+      `http://localhost:3000`,
     `https://aditya-react-blog-website.vercel.app`
-     `http://localhost:3000`,
+  
       
     ],
     
   })
 );
-const origin= `https://aditya-react-blog-website.vercel.app`
-app.use((req, res, next) => {
-  res.set({
-      "Access-Control-Allow-Origin": `${origin}`,
-      "Access-Control-Allow-Methods": "*",
-      "Access-Control-Allow-Headers": "'Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'",
-  });
 
-  next();
-});
 
   app.use(quotesRoutes);
 
 const port=process.env.port || 8080;
 
+app.get("/",(req,res)=>{
+  res.send(`Server started at port ${port}`);
+})
 
 app.listen(port,(req,res)=>{
     console.log(`Server started at port ${port}`)
