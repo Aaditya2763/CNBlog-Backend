@@ -25,7 +25,7 @@ app.use(
   cors({
     origin: [
       
-    `https://aditya-react-blog-website.vercel.app/`
+    `https://aditya-react-blog-website.vercel.app`
       `http://localhost:3000`,
       
     ],
@@ -34,7 +34,7 @@ app.use(
 );
 
 
-  app.use(quotesRoutes)
+  app.use(quotesRoutes);
 
 const port=process.env.port || 8080;
 
